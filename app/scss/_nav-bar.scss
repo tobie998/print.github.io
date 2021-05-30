@@ -1,0 +1,250 @@
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    padding: 21px 20px;  
+}
+
+
+.mobile-menu {
+    cursor: pointer;
+}
+
+.logo {
+    width: 50%;
+    font-size: 25px;
+    color: $black;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.logo:hover {
+    color: $red;
+}
+
+.icons {
+    font-size: 24px;
+}
+
+
+
+.right-icons {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.right-icons > div {
+    margin-left: 15px;
+}
+
+.right-icons div:nth-child(2) {
+    display: none;
+}
+
+.bag-icon {
+    position: relative;
+}
+
+.bag-icon span {
+    font-size: 10px;
+    background-color: $red;
+    border-radius: 50%;
+    padding: 0 5px;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+//open menu
+.menu-open {
+    width: 65%;
+    height: 100vh;
+    max-width: 425px;
+    background-color: #fff;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: left 0.8s ease;
+}
+
+.mobile-nav .active {
+    left: 0;
+    
+}
+
+/*Menu top */
+.menu-top {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: $a-light-gray;
+}
+
+.menu-top div.first {
+    width: 90%;
+
+    & > i {
+        padding-right: 15px;
+    }    
+}
+
+.menu-top div:last-child {
+    
+    padding-right: 0px;
+}
+
+
+/*Menu content */
+.menu-content {
+    overflow-y: scroll;
+    height: 70%;
+    max-width: 425px;
+    padding: 0 20px;
+}
+
+.menu-content .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+}
+
+.main-menu > a:first-child {
+    width: 90%;
+    text-decoration: none;
+    color: $black;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.menu-content .main-menu .angle-down {
+    color: $black;
+}
+
+.main-menu .sub-menu {
+    margin: 0rem 0 1rem 2rem;
+    list-style: none;
+    
+    li {
+        padding: 0.5rem 0;
+    }
+
+    li > a {
+        color: $black;
+    }
+
+}
+
+.collapsing {
+    transition: 0.7s ease;
+}
+
+
+/*Menu bottom */
+.menu-bottom {
+    display: flex;
+    align-items: center;
+    padding: 32px 20px;
+    background-color: $a-light-gray;
+
+
+    & > a {
+        color: $black;
+        padding-right: 16px;
+    }
+
+    & > a:hover {
+        color: $red;
+    }
+}
+
+/*Desktop menu*/
+.desktop-nav {
+    width: 70%;
+}
+
+ul.desktop-main-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+ul.desktop-main-menu > li {
+    padding-right: 45px;
+    position: relative;
+}
+
+.desktop-main-menu > li > a {
+    color: $black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.desktop-main-menu li a:hover {
+    color: $red;
+    text-decoration: none;
+}
+
+.la-angle-down {
+    font-size: 12px;
+}
+
+
+.desktop-sub-menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 0.5px 0 #dcdbdb;
+    width: 10rem;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+    padding-top: 1rem;
+}
+
+.desktop-sub-menu li {
+    list-style: none;
+    margin: 1rem;
+}
+
+.desktop-sub-menu li > a {
+    color: $black;
+    text-decoration: none;
+}
+
+.desktop-main-menu li:hover .desktop-sub-menu {
+    display: block;
+}
+
+
+@media screen and (max-width: 990px) {
+    .desktop-nav {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 991px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .logo {
+        width: 15%;
+        margin-left: 0;
+    }
+
+    .right-icons {
+        width: 15%;
+    }
+
+    .right-icons div:nth-child(2) {
+      display: block;
+    }   
+}

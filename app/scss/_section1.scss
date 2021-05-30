@@ -1,0 +1,99 @@
+.section-1-image {
+    background-image: url("/Images/Rectangle601.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff60;
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+}
+
+
+.section-1-content {
+    text-align: center;
+    padding: 0px 20px;
+    
+}
+
+.section-1-content h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: $black;
+    margin: 1rem 0 4rem;
+    line-height: 1.25;
+}
+
+.section-1-content h1 span {
+    color: $red;
+}
+
+.section-1-btn {
+    display: block;
+    padding: 0.8rem;
+    margin: 1rem auto;
+    border: 1px solid #151517;
+    width: 150px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+
+    a {
+        color: $black;
+        font-weight: 600;
+    }
+}
+
+.section-1-btn:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-1-btn:hover {
+    background-color: $black;
+}
+
+@media screen and (min-width: 375px) {
+    .section-1-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .section-1-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 574px) { 
+    .section-1-content h1 {
+        font-size: 3.4rem;
+        text-align: left;
+    }
+
+    .section-1-content .section-1-btn {
+        margin-left: 0px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .section-1-content h1 {
+        font-size: 4rem;
+        width: 68%;
+    }
+    
+}
+
+@media screen and (min-width:991px) {
+    .section-1-image {
+        background-size: contain;
+        background-position: center right;
+        background-color: initial;
+    }
+
+    .section-1-content h1 {
+        width: 42%;
+    }
+}

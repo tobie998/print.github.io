@@ -1,0 +1,95 @@
+.section-2 {
+    background-color: #f7f8ff;
+    padding-top: 1.5rem;
+}
+
+.section-2-heading {
+    text-align: center;
+    padding: 0.5rem 0 2.5rem;
+}
+
+.section-2-heading h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: $black;
+}
+
+.section-2-heading p {
+    color: #5a5a5a;
+
+}
+
+.section-2-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-2-item {
+    margin-bottom: 1rem;
+}
+
+.section-2-item button {
+    border-radius: 50%;
+    display: block;
+    margin:0 auto;
+    padding: 0.8rem;
+    background-color: #e95257;
+    color: #fff;
+    border: none;
+}
+
+.section-2-item button > i {
+    font-size: 2.25rem;
+}
+
+.section-2-item a {
+    display: block;
+    padding: 1rem 0 0.1rem;
+    color: $black;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+.section-2-item p {
+    font-size: 1rem;
+    color: #5a5a5a;
+}
+
+.section-2-item p span {
+    font-weight: bolder;
+}
+
+.section-2-item button:focus {
+    outline: 0;
+}
+
+.section-2-item button:hover > i {
+    transform: scale(1.25);
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 576px) {
+    .section-2 {
+        padding: 3rem 0 1.25rem;
+    }
+
+
+    .section-2-content {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .section-2-item {
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding: 1rem;
+        text-align: center;
+
+    }
+    
+}

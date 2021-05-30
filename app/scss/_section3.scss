@@ -1,0 +1,108 @@
+.section-3 {
+    margin: 5rem 0 5.8rem;
+
+    &-content {
+        position: relative;
+    }
+
+    &-header {
+        display: block;
+        text-align: center;
+        line-height: 0.5;
+        margin-bottom: 2rem;
+
+        & h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: $black;
+        }
+
+        & p {
+            color: $p-color;
+        }
+    }
+}
+
+.owl-carousel {
+    overflow: hidden;
+    margin-top: 2.5rem;
+
+    & .item {
+
+
+        & a {
+            text-decoration: none;
+            color: $black;
+            text-align: center;
+
+            & img {
+                padding: 3rem 2.5rem;
+                background-color: #f7f7f7;
+                width: 90%;
+                margin: 0 5%;
+                transition: 0.3s ease;
+            }
+        }
+
+        & a:nth-child(2) p {
+            margin: 1rem 0 0.2rem;
+        }
+
+        & p:last-child  {
+            text-align: center;
+
+            span {
+                text-decoration: line-through;
+                color: #d0d0d0;
+            }
+        }
+    }   
+}
+
+
+.owl-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    color: $black;
+    top: 48%;
+    z-index: 1;
+
+    & i {
+        font-size: 1.5rem;
+    }
+}
+
+.owl-prev {
+    left: -1%;
+}
+
+.owl-next {
+    right: -1%;
+}
+
+.owl-btn:focus {
+    outline: 0;
+}
+
+.owl-carousel .item > a:hover img {
+    transform: scale(1.05);
+    
+}
+
+.owl-carousel .item a:nth-child(2):hover {
+    color: $main-red;
+}
+
+@media screen and (max-width: 767px) {
+    
+
+    .owl-prev {
+        left: -8px;
+    }
+
+    .owl-next {
+        right: -8px;
+    }
+}
